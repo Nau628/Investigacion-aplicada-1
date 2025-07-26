@@ -60,3 +60,27 @@ iframe {
   border: none;
   margin-top: 1rem;
 }
+
+/* 🔍 Media queries para responsividad */
+@media (max-width: 768px) {
+  .galeria-tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tarjeta {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .tarjeta {
+    width: 200px; /* Tamaño fijo en escritorio */
+  }
+}
