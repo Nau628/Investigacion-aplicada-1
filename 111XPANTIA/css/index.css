@@ -60,27 +60,33 @@ iframe {
   border: none;
   margin-top: 1rem;
 }
-
-/* 🔍 Media queries para responsividad */
+/* 📱 Responsividad para dispositivos móviles */
 @media (max-width: 768px) {
+  /* Tarjetas en una sola columna para pantallas pequeñas */
   .galeria-tarjetas {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Tarjeta ocupa casi toda la pantalla, con margen */
   .tarjeta {
     width: 90%;
   }
 }
 
+/* 📲 Responsividad para tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
+  /* Tarjetas más grandes, dos por fila aproximadamente */
   .tarjeta {
     width: 45%;
   }
 }
 
+/* 🖥️ Estilo para pantallas de escritorio */
 @media (min-width: 1025px) {
+  /* Tarjeta con ancho fijo como diseño original */
   .tarjeta {
-    width: 200px; /* Tamaño fijo en escritorio */
+    width: 200px;
   }
 }
+
