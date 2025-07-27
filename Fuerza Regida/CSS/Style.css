@@ -1,0 +1,209 @@
+/* === ESTILO GENERAL === */
+body { /* Estilo base del cuerpo de la página */
+  margin: 0; /* Elimina los márgenes por defecto */
+  font-family: Arial, sans-serif; /* Fuente principal */
+  background-color: #262424; /* Color de fondo oscuro */
+}
+
+/* === NAVBAR Y MENÚ === */
+.navbar { /* Contenedor de la barra de navegación */
+  background-color: red; /* Fondo rojo llamativo */
+  padding: 10px 0; /* Espaciado vertical */
+  display: flex; /* Usa Flexbox para organizar contenido */
+  flex-direction: column; /* Apila elementos verticalmente */
+  align-items: center; /* Centra elementos horizontalmente */
+}
+
+.navbar-container { /* Contenedor interno del navbar */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 1000px; /* Limita el ancho máximo */
+  display: flex; /* Flexbox para distribución horizontal */
+  justify-content: space-between; /* Distribuye elementos con espacio entre ellos */
+  align-items: center; /* Centra verticalmente */
+  padding: 0 20px; /* Añade espaciado lateral interno */
+}
+
+.logo { /* Estilo del logo */
+  width: 60px; /* Ancho fijo */
+  height: 60px; /* Altura fija */
+  object-fit: contain; /* Escala la imagen sin recortes */
+}
+
+.menu-toggle { /* Botón de menú hamburguesa (oculto por defecto) */
+  display: none; /* No se muestra en escritorio */
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  font-size: 28px; /* Tamaño grande del icono */
+  color: white; /* Color del icono */
+}
+
+.nav-links { /* Lista de enlaces del menú */
+  list-style: none; /* Sin viñetas */
+  display: flex; /* Se organizan horizontalmente */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  flex-wrap: wrap; /* Permite que los enlaces pasen a otra línea */
+  gap: 15px; /* Espacio entre enlaces */
+  margin: 0 auto; /* Centrado automático */
+  padding: 0; /* Sin relleno interno */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 1000px; /* Limita ancho máximo */
+}
+
+.nav-links li a { /* Estilo de los enlaces del menú */
+  background: black; /* Fondo negro para contraste */
+  color: white; /* Texto blanco */
+  padding: 8px 16px; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados tipo pastilla */
+  text-decoration: none; /* Elimina subrayado */
+}
+
+/* === CAJAS SEPARADAS POR SECCIÓN === */
+.caja { /* Contenedor para secciones destacadas */
+  width: 90%; /* Ocupa la mayor parte del ancho */
+  max-width: 900px; /* No excede los 900px */
+  margin: 30px auto; /* Separación vertical y centrado horizontal */
+  background-color: #fff; /* Fondo blanco */
+  padding: 25px; /* Espaciado interior */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra ligera para profundidad */
+  text-align: center; /* Centra el contenido */
+}
+
+/* === IMAGEN DE LA BANDA (GRANDE) === */
+.img-banda { /* Imagen principal destacada */
+  width: 50%; /* Ocupa mitad del contenedor */
+  max-width: 600px; /* Limita el ancho máximo */
+  height: 500px; /* Altura fija */
+  object-fit: cover; /* Recorta la imagen para llenar sin distorsión */
+  border-radius: 12px; /* Bordes redondeados */
+  margin: 20px auto; /* Espaciado vertical y centrado horizontal */
+  display: block; /* Se comporta como bloque */
+}
+
+/* === IMÁGENES DE ÁLBUMES (CUADROS MEDIANOS) === */
+.img-album { /* Imagen representativa de álbum */
+  width: 180px; /* Ancho fijo */
+  height: 180px; /* Altura fija */
+  object-fit: cover; /* Relleno sin deformar */
+  border-radius: 8px; /* Bordes suavizados */
+  border: 2px solid #ccc; /* Borde gris claro */
+}
+
+/* === IMÁGENES DE REDES (CUADROS PEQUEÑOS) === */
+.img-red { /* Icono de red social */
+  width: 100px; /* Ancho fijo */
+  height: 100px; /* Altura fija */
+  object-fit: contain; /* Ajusta sin recorte */
+  margin-bottom: 5px; /* Espaciado inferior */
+}
+
+/* === ÁLBUMES === */
+.album-list { /* Contenedor de múltiples álbumes */
+  display: flex; /* Organización horizontal con Flexbox */
+  justify-content: center; /* Centrado horizontal */
+  flex-wrap: wrap; /* Permite salto de línea */
+  gap: 20px; /* Espacio entre álbumes */
+}
+
+.album { /* Caja individual para cada álbum */
+  width: 200px; /* Ancho fijo */
+  padding: 10px; /* Espaciado interior */
+  background: white; /* Fondo blanco */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para realce */
+}
+
+/* === BOTONES === */
+.btn, .btn-registrar { /* Estilos compartidos para botones */
+  background-color: red; /* Fondo rojo */
+  color: white; /* Texto blanco */
+  padding: 8px 16px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Se comporta como bloque en línea */
+  margin-top: 8px; /* Espaciado superior */
+}
+
+/* === FORMULARIO DE REGISTRO === */
+.form-container { /* Caja que envuelve todo el formulario */
+  max-width: 400px; /* Limita el ancho máximo */
+  margin: 50px auto; /* Espaciado vertical y centrado horizontal */
+  background: #eee; /* Fondo gris claro */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sombra más marcada */
+}
+
+.form-container h2 { /* Título del formulario */
+  text-align: center; /* Centrado horizontal */
+}
+
+.form-container label { /* Etiquetas de los campos */
+  display: block; /* Se muestran como bloques */
+  margin: 10px 0 5px; /* Espaciado superior e inferior */
+}
+
+.form-container input,
+.form-container textarea { /* Campos de texto */
+  width: 100%; /* Ocupan todo el ancho disponible */
+  padding: 10px; /* Espaciado interior */
+  margin-bottom: 15px; /* Separación entre campos */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.form-container button { /* Botón de envío */
+  width: 100%; /* Ancho completo */
+  background-color: red; /* Fondo rojo */
+  color: white; /* Texto blanco */
+  padding: 10px; /* Espaciado interior */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor tipo puntero */
+}
+
+/* === REDES SOCIALES === */
+.social { /* Contenedor de cada red social */
+  display: inline-block; /* Se muestra en línea pero con comportamiento de bloque */
+  margin: 10px; /* Espaciado alrededor */
+  text-align: center; /* Centra contenido interno */
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) { /* Estilos para dispositivos móviles */
+  .nav-links {
+    display: none; /* Oculta el menú por defecto */
+    flex-direction: column; /* Acomoda enlaces verticalmente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 10px; /* Espaciado superior */
+  }
+
+  .nav-links.active {
+    display: flex; /* Muestra el menú al activar */
+  }
+
+  .menu-toggle {
+    display: block; /* Muestra el botón hamburguesa */
+  }
+
+  .navbar-container {
+    flex-direction: row; /* Mantiene distribución horizontal */
+    justify-content: space-between; /* Espacio entre logo y menú */
+    padding: 0 20px; /* Espaciado lateral */
+  }
+
+  .logo {
+    margin: 0; /* Elimina márgenes */
+  }
+
+  .album-list {
+    flex-direction: column; /* Apila álbumes verticalmente */
+    align-items: center; /* Centrado horizontal */
+  }
+
+  .img-banda {
+    height: 200px;
+  }
+}
